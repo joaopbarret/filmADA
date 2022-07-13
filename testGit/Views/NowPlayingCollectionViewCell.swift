@@ -8,6 +8,8 @@
 import UIKit
 
 class NowPlayingCollectionViewCell: UICollectionViewCell {
+    static let cellIdentifier = "nowPlayingCell"
+
     @IBOutlet var titleLabel: UILabel!
     
     @IBOutlet var imagem: UIImageView!
