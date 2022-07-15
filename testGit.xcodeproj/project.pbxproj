@@ -25,6 +25,9 @@
 		5B89EDF6287E449E008AB14F /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EDF5287E449E008AB14F /* UpcomingCollectionViewCell.swift */; };
 		5B89EDF8287F3F00008AB14F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EDF7287F3F00008AB14F /* DetailsViewController.swift */; };
 		5B89EDFA287F47E0008AB14F /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EDF9287F47E0008AB14F /* FeaturedViewController+UICollectionViewDelegate.swift */; };
+		5B89EDFC2881E77F008AB14F /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B89EDFB2881E77F008AB14F /* TMDB-Info.plist */; };
+		5B89EE002881EC69008AB14F /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EDFF2881EC69008AB14F /* Movie+API.swift */; };
+		5B89EE022881F8CC008AB14F /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE012881F8CC008AB14F /* MovieResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		5B89EDF5287E449E008AB14F /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B89EDF7287F3F00008AB14F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		5B89EDF9287F47E0008AB14F /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		5B89EDFB2881E77F008AB14F /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
+		5B89EDFF2881EC69008AB14F /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+API.swift"; sourceTree = "<group>"; };
+		5B89EE012881F8CC008AB14F /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 			children = (
 				5B291E4E28737774005CB7D0 /* Info.plist */,
 				5B291E4928737774005CB7D0 /* Assets.xcassets */,
+				5B89EDFB2881E77F008AB14F /* TMDB-Info.plist */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -125,12 +132,14 @@
 		5B89EDE4287DEDF3008AB14F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B89EDFF2881EC69008AB14F /* Movie+API.swift */,
 				5B89EDEA287DF4E5008AB14F /* Movie+NowPlaying.swift */,
 				5B89EDEC287DF4E5008AB14F /* Movie+Popular.swift */,
 				5B89EDE9287DF4E5008AB14F /* Movie+TrendingThisWeek.swift */,
 				5B89EDED287DF4E5008AB14F /* Movie+TrendingToday.swift */,
 				5B89EDEB287DF4E5008AB14F /* Movie+Upcoming.swift */,
 				5B89EDE7287DEE5B008AB14F /* Movie.swift */,
+				5B89EE012881F8CC008AB14F /* MovieResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B291E4D28737774005CB7D0 /* LaunchScreen.storyboard in Resources */,
+				5B89EDFC2881E77F008AB14F /* TMDB-Info.plist in Resources */,
 				5B291E4A28737774005CB7D0 /* Assets.xcassets in Resources */,
 				5B291E4828737771005CB7D0 /* Main.storyboard in Resources */,
 			);
@@ -219,8 +229,10 @@
 				5B291E4128737771005CB7D0 /* AppDelegate.swift in Sources */,
 				5B89EDFA287F47E0008AB14F /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				5B89EDF8287F3F00008AB14F /* DetailsViewController.swift in Sources */,
+				5B89EE022881F8CC008AB14F /* MovieResponse.swift in Sources */,
 				5B89EDF0287DF4E5008AB14F /* Movie+Upcoming.swift in Sources */,
 				5B291E4328737771005CB7D0 /* SceneDelegate.swift in Sources */,
+				5B89EE002881EC69008AB14F /* Movie+API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

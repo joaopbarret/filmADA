@@ -117,6 +117,8 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+TMDB-Info.plist
+
 ### Xcode ###
 
 ## Xcode 8 and earlier
