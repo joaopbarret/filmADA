@@ -41,10 +41,22 @@ class DetailsViewController: UIViewController {
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: " + String(format: "%.1f", movie.voteAverage) + "/10"
         overviewLabel.text = movie.overview
-        
+        backdropImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped)))
         
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? OfficialPosterViewController{
+            Task {
+                let imageData = await Movie.downloadImageData(withPath: movie?.posterPath ?? "")
+                let imagem = UIImage(data: imageData) ?? UIImage()
+                destination.imagem.image = imagem
+            }
+        }
+        
+    }
     
-
+    @objc private func imageTapped(_ recognizer: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "officialPosterSegue", sender: movie)
+    }
 }

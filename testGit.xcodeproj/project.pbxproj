@@ -32,6 +32,7 @@
 		5B89EE062887464C008AB14F /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE052887464C008AB14F /* TrendingViewController.swift */; };
 		5B89EE0828874774008AB14F /* TrendingViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE0728874774008AB14F /* TrendingViewController+UITableViewDataSource.swift */; };
 		5B89EE0A2887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE092887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift */; };
+		5BF969AC288845A20003EEE1 /* OfficialPosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF969AB288845A20003EEE1 /* OfficialPosterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		5B89EE052887464C008AB14F /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		5B89EE0728874774008AB14F /* TrendingViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		5B89EE092887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		5BF969AB288845A20003EEE1 /* OfficialPosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialPosterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				5B89EE052887464C008AB14F /* TrendingViewController.swift */,
 				5B89EE0728874774008AB14F /* TrendingViewController+UITableViewDataSource.swift */,
 				5B89EE092887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift */,
+				5BF969AB288845A20003EEE1 /* OfficialPosterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				5B89EDDF287C9846008AB14F /* NowPlayingCollectionViewCell.swift in Sources */,
 				5B89EE0A2887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift in Sources */,
+				5BF969AC288845A20003EEE1 /* OfficialPosterViewController.swift in Sources */,
 				5B89EDDD287C9806008AB14F /* PopularCollectionViewCell.swift in Sources */,
 				5B89EE04288745E9008AB14F /* TrendingTableViewCell.swift in Sources */,
 				5B89EDF2287DF4E5008AB14F /* Movie+TrendingToday.swift in Sources */,
