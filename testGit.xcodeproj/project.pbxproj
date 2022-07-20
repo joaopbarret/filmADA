@@ -28,6 +28,10 @@
 		5B89EDFC2881E77F008AB14F /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B89EDFB2881E77F008AB14F /* TMDB-Info.plist */; };
 		5B89EE002881EC69008AB14F /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EDFF2881EC69008AB14F /* Movie+API.swift */; };
 		5B89EE022881F8CC008AB14F /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE012881F8CC008AB14F /* MovieResponse.swift */; };
+		5B89EE04288745E9008AB14F /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE03288745E9008AB14F /* TrendingTableViewCell.swift */; };
+		5B89EE062887464C008AB14F /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE052887464C008AB14F /* TrendingViewController.swift */; };
+		5B89EE0828874774008AB14F /* TrendingViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE0728874774008AB14F /* TrendingViewController+UITableViewDataSource.swift */; };
+		5B89EE0A2887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89EE092887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		5B89EDFB2881E77F008AB14F /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 		5B89EDFF2881EC69008AB14F /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+API.swift"; sourceTree = "<group>"; };
 		5B89EE012881F8CC008AB14F /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		5B89EE03288745E9008AB14F /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		5B89EE052887464C008AB14F /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		5B89EE0728874774008AB14F /* TrendingViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		5B89EE092887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,9 @@
 				5B89EDF3287E1452008AB14F /* FeaturedViewController+UICollectionViewDataSource.swift */,
 				5B89EDF7287F3F00008AB14F /* DetailsViewController.swift */,
 				5B89EDF9287F47E0008AB14F /* FeaturedViewController+UICollectionViewDelegate.swift */,
+				5B89EE052887464C008AB14F /* TrendingViewController.swift */,
+				5B89EE0728874774008AB14F /* TrendingViewController+UITableViewDataSource.swift */,
+				5B89EE092887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +126,7 @@
 				5B89EDDC287C9806008AB14F /* PopularCollectionViewCell.swift */,
 				5B89EDDE287C9846008AB14F /* NowPlayingCollectionViewCell.swift */,
 				5B89EDF5287E449E008AB14F /* UpcomingCollectionViewCell.swift */,
+				5B89EE03288745E9008AB14F /* TrendingTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,13 +229,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B89EDDF287C9846008AB14F /* NowPlayingCollectionViewCell.swift in Sources */,
+				5B89EE0A2887532B008AB14F /* TrendingViewController+UITableViewDelegate.swift in Sources */,
 				5B89EDDD287C9806008AB14F /* PopularCollectionViewCell.swift in Sources */,
+				5B89EE04288745E9008AB14F /* TrendingTableViewCell.swift in Sources */,
 				5B89EDF2287DF4E5008AB14F /* Movie+TrendingToday.swift in Sources */,
 				5B89EDF6287E449E008AB14F /* UpcomingCollectionViewCell.swift in Sources */,
 				5B89EDE8287DEE5B008AB14F /* Movie.swift in Sources */,
 				5B89EDF4287E1452008AB14F /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
+				5B89EE062887464C008AB14F /* TrendingViewController.swift in Sources */,
 				5B89EDEE287DF4E5008AB14F /* Movie+TrendingThisWeek.swift in Sources */,
 				5B89EDEF287DF4E5008AB14F /* Movie+NowPlaying.swift in Sources */,
+				5B89EE0828874774008AB14F /* TrendingViewController+UITableViewDataSource.swift in Sources */,
 				5B291E4528737771005CB7D0 /* FeaturedViewController.swift in Sources */,
 				5B89EDF1287DF4E5008AB14F /* Movie+Popular.swift in Sources */,
 				5B291E4128737771005CB7D0 /* AppDelegate.swift in Sources */,

@@ -43,8 +43,6 @@ extension FeaturedViewController: UICollectionViewDataSource{
     fileprivate func popularCellMaker(_ indexPath: IndexPath) -> PopularCollectionViewCell {
         let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell
         
-        cell?.setup(title: popularMovies[indexPath.item].title,
-                    image: UIImage())
         
         let movie = popularMovies[indexPath.item]
         
@@ -59,17 +57,26 @@ extension FeaturedViewController: UICollectionViewDataSource{
     
     fileprivate func nowPlayingCellMaker( _ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
         let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell
-        
-        cell?.setup(title: nowPlayingMovies[indexPath.item].title, year: String(nowPlayingMovies[indexPath.item].releaseDate.prefix(4)), image: UIImage(named: nowPlayingMovies[indexPath.item].posterPath) ?? UIImage())
-        
+      
+        let movie = nowPlayingMovies[indexPath.item]
+        Task {
+            let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+            let imagem = UIImage(data: imageData) ?? UIImage()
+            cell?.setup(title: movie.title, year:String( movie.releaseDate.prefix(4)), image: imagem)
+        }
         
         return cell ?? NowPlayingCollectionViewCell()
     }
     
     fileprivate func upcomingCellMaker(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell
+        let movie = upcomingMovies[indexPath.item]
         
-        cell?.imagem.image = UIImage(named: upcomingMovies[indexPath.item].posterPath)
+        Task {
+            let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+            let imagem = UIImage(data: imageData) ?? UIImage()
+            cell?.setup(title: movie.title, year:String( movie.releaseDate.prefix(4)), image: imagem)
+        }
         
         return cell ?? UpcomingCollectionViewCell()
     }
